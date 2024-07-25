@@ -1,4 +1,4 @@
-﻿namespace Arora.Blazor.QR;
+﻿namespace QriousSharp;
 /// <summary>
 /// Represents the properties for configuring a QR code.
 /// </summary>

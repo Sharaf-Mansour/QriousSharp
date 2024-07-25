@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arora.Blazor.QR", "Arora.Blazor.QR.csproj", "{C2840993-02E1-48F2-A6D2-660FDF3001AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QriousSharp", "QriousSharp.csproj", "{C2840993-02E1-48F2-A6D2-660FDF3001AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAppForQR", "..\SampleAppForQR\SampleAppForQR.csproj", "{8FB08845-F500-4AB1-8281-B92AE432EDB0}"
 EndProject
