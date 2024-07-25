@@ -17,7 +17,7 @@
         {
             PageLoaded = firstRender;
             moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>(
-            "import", "./_content/Arora.Blazor.QR/BlazorQR.js").AsTask());
+            "import", "./_content/QriousSharp/BlazorQR.js").AsTask());
             await  Prompt();
         }
     }
