@@ -8,7 +8,7 @@ public class QRious
     /// Gets or sets the background color of the QR code.
     /// Default value is "white".
     /// </summary>
-    public string Background { get; set; } = "red";
+    public string Background { get; set; } = "white";
     /// <summary>
     /// Gets or sets the background alpha (transparency) of the QR code.
     /// Default value is 1.0.
@@ -48,7 +48,7 @@ public class QRious
     /// Gets or sets the size of the QR code in pixels.
     /// Default value is 100.
     /// </summary>
-    public int Size { get; set; } = 200;
+    public int Size { get; set; } = 100;
 
     /// <summary>
     /// Gets or sets the value encoded within the QR code.
