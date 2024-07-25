@@ -1,0 +1,37 @@
+﻿@using Microsoft.JSInterop
+@inject IJSRuntime jsRuntime
+<canvas id="@id"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+@code{
+    private Lazy<Task<IJSObjectReference>>? moduleTask;
+    [Parameter, EditorRequired]
+    public required string id { get; set; }
+    [Parameter, EditorRequired]
+    public required QRious QRious { get; set; }
+    bool PageLoaded { get; set; } = false;
+    [Parameter]
+    public EventCallback<QRious> QRiousChanged { get; set; }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            PageLoaded = firstRender;
+            moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>(
+            "import", "./_content/Arora.Blazor.QR/BlazorQR.js").AsTask());
+            await  Prompt();
+        }
+    }
+    protected override async Task OnParametersSetAsync()
+    {
+        if (PageLoaded)
+        await Prompt();
+    }
+    public async ValueTask Prompt()
+    {
+        if (QRiousChanged.HasDelegate)
+        {
+            var module = await moduleTask!.Value;
+            await module.InvokeVoidAsync("GenrateQR", QRious , id);
+        }
+    }
+}
