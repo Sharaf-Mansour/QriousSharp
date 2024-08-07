@@ -33,7 +33,7 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\..\Downloads\Frame 212.png">
+    <None Include="..\Sample\Frame 212.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
