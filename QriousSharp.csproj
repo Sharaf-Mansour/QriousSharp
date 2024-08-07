@@ -4,7 +4,22 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Title>QRiousSharp</Title>
+    <Version>4.0.2</Version>
+    <Authors>Sharaf Mansour</Authors>
+    <Company>ElitesXTech</Company>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>Based on JS Lib qrious</Description>
+    <PackageProjectUrl>https://github.com/Sharaf-Mansour/QriousSharp</PackageProjectUrl>
+    <PackageIcon>Frame 212.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Downloads\Frame 212.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 
   <ItemGroup>
