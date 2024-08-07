@@ -12,9 +12,27 @@
     <Description>Based on JS Lib qrious</Description>
     <PackageProjectUrl>https://github.com/Sharaf-Mansour/QriousSharp</PackageProjectUrl>
     <PackageIcon>Frame 212.png</PackageIcon>
+    <ApplicationIcon>Frame 212.ico</ApplicationIcon>
+    <Copyright>SharafMansour</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Sharaf-Mansour/QriousSharp</RepositoryUrl>
+    <PackageTags>QR, Blazor, C#, AspNetCore. </PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Frame 212.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\..\Downloads\Frame 212.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
