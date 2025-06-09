@@ -3,24 +3,26 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
+ 
 <Qrious Id="123" @bind-QRious="qr"></Qrious>
-
+<br />
+<br />
+<br />
+<br />
+<br />
 <button @onclick="GenerateQR">Generate QR</button>
 
 @code{
     private QRious qr = new QRious
     {
-        Value = "https://www.google.com",
+        Value = "https://droneanduavblocking.vercel.app/",
         Size = 200
     };
     void GenerateQR()
     {
         qr = new QRious();
         qr.Size = 500;
-        qr.Value = "https://www.bing.com";
+        qr.Value = "https://droneanduavblocking.vercel.app/";
      }
  
  }
