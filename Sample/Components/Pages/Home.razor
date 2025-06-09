@@ -11,18 +11,18 @@
 <br />
 <br />
 <button @onclick="GenerateQR">Generate QR</button>
-
+    
 @code{
     private QRious qr = new QRious
     {
-        Value = "https://droneanduavblocking.vercel.app/",
+        Value = "https://Google.com",
         Size = 200
     };
     void GenerateQR()
     {
         qr = new QRious();
         qr.Size = 500;
-        qr.Value = "https://droneanduavblocking.vercel.app/";
+        qr.Value = "https://Google.com";
      }
  
  }
